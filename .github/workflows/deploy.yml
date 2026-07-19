@@ -1,26 +1,36 @@
-name: Deploy to LH
+name: Deploy na LH.pl
 
 on:
   push:
     branches:
-      - main  
+      - main  # lub master
 
 jobs:
   web-deploy:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
-      - name: Get latest code
+      - name: Pobierz kod
         uses: actions/checkout@v4
 
-      - name: Sync files
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      # JEŚLI MASZ FRAMEWORK (np. React, Vue), odkomentuj poniższe linie:
+      # - name: Instalacja zależności
+      #   run: npm install
+      # - name: Budowanie projektu (tworzy folder dist lub build)
+      #   run: npm run build
+
+      - name: FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: ${{ secrets.FTP_PATH }}
-          exclude: |
-            **/.git*
-            **/.git*/**
-            node_modules/**
+          # TO JEST KLUCZ DO 1:1
+          # Opcja 'clean' usuwa pliki na serwerze, których nie ma w repozytorium.
+          # Ustaw na 'true', żeby mieć lustrzane odbicie.
+          clean: true 
+          # Wskaż folder, który ma być wysłany:
+          # Jeśli masz builda, wpisz: local-dir: ./dist/ (lub ./build/)
+          # Jeśli to zwykły HTML/CSS, zostaw './'
+          local-dir: ./

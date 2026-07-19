@@ -12,6 +12,10 @@
       const value = getKey(dict, el.getAttribute("data-i18n"));
       if (value !== undefined) el.textContent = value;
     });
+    document.querySelectorAll("[data-i18n-html]").forEach((el) => {
+      const value = getKey(dict, el.getAttribute("data-i18n-html"));
+      if (value !== undefined) el.innerHTML = value;
+    });
     document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
       const value = getKey(dict, el.getAttribute("data-i18n-placeholder"));
       if (value !== undefined) el.setAttribute("placeholder", value);

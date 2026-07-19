@@ -28,7 +28,7 @@
   "home": {
     "hero": {
       "eyebrow": "MXM Design — branding & web",
-      "title": "A brand they remember. A website that sells.",
+      "title": "A <span class=\"text-accent\">brand</span> they remember. A <span class=\"text-accent\">website</span> that sells.",
       "subtitle": "I design visual identities and websites that build trust, set you apart, and guide visitors to contact — no templates, no guesswork.",
       "ctaPrimary": "Get a Quote",
       "ctaSecondary": "See Portfolio"
@@ -146,7 +146,7 @@
   "about": {
     "hero": {
       "eyebrow": "About",
-      "title": "I design brands and sites that earn trust from the first screen.",
+      "title": "I design <span class=\"text-accent\">brands</span> and <span class=\"text-accent\">sites</span> that earn trust from the first screen.",
       "text": "MXM Design joins branding, UX, and code so your offer looks professional and sells more easily — without quality compromises."
     },
     "story": {
@@ -189,7 +189,7 @@
   "services": {
     "hero": {
       "eyebrow": "Services",
-      "title": "Branding, website, and ads — one coherent sales system.",
+      "title": "<span class=\"text-accent\">Branding</span>, <span class=\"text-accent\">website</span>, and <span class=\"text-accent\">ads</span> — one coherent sales system.",
       "text": "Three services, one goal: look professional and win clients more easily."
     },
     "branding": {
@@ -234,7 +234,7 @@
   "portfolio": {
     "hero": {
       "eyebrow": "Portfolio",
-      "title": "Selected Work",
+      "title": "Selected <span class=\"text-accent\">Work</span>",
       "text": "Examples of direction and quality. Full case studies with results are coming soon."
     },
     "filters": {
@@ -265,7 +265,7 @@
   "contact": {
     "hero": {
       "eyebrow": "Contact",
-      "title": "Let's talk about your project",
+      "title": "Let's talk about your <span class=\"text-accent\">project</span>",
       "text": "Describe your goals — within 24 hours you’ll get a concrete reply and next steps."
     },
     "form": {

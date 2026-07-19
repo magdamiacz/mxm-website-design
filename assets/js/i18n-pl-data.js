@@ -28,7 +28,7 @@ window.__MXM_I18N_PL__ = {
   "home": {
     "hero": {
       "eyebrow": "MXM Design — branding i strony www",
-      "title": "Marka, którą zapamiętują. Strona, która sprzedaje.",
+      "title": "<span class=\"text-accent\">Marka</span>, którą zapamiętują. <span class=\"text-accent\">Strona</span>, która sprzedaje.",
       "subtitle": "Projektuję identyfikację wizualną i strony internetowe, które budują zaufanie, wyróżniają Cię na rynku i prowadzą klienta do kontaktu — bez gotowców i bez zgadywania.",
       "ctaPrimary": "Wyceń projekt",
       "ctaSecondary": "Zobacz portfolio"
@@ -146,7 +146,7 @@ window.__MXM_I18N_PL__ = {
   "about": {
     "hero": {
       "eyebrow": "O mnie",
-      "title": "Projektuję marki i strony, które budują zaufanie od pierwszego ekranu.",
+      "title": "Projektuję <span class=\"text-accent\">marki</span> i <span class=\"text-accent\">strony</span>, które budują zaufanie od pierwszego ekranu.",
       "text": "MXM Design łączy branding, UX i kod, żeby Twoja oferta wyglądała profesjonalnie i łatwiej sprzedawała — bez kompromisów w jakości."
     },
     "story": {
@@ -189,7 +189,7 @@ window.__MXM_I18N_PL__ = {
   "services": {
     "hero": {
       "eyebrow": "Usługi",
-      "title": "Branding, strona i reklamy — jeden spójny system sprzedaży.",
+      "title": "<span class=\"text-accent\">Branding</span>, <span class=\"text-accent\">strona</span> i <span class=\"text-accent\">reklamy</span> — jeden spójny system sprzedaży.",
       "text": "Trzy usługi, jeden cel: wyglądać profesjonalnie i łatwiej zdobywać klientów."
     },
     "branding": {
@@ -234,7 +234,7 @@ window.__MXM_I18N_PL__ = {
   "portfolio": {
     "hero": {
       "eyebrow": "Portfolio",
-      "title": "Wybrane realizacje",
+      "title": "Wybrane <span class=\"text-accent\">realizacje</span>",
       "text": "Przykłady kierunku i jakości. Pełne case studies z wynikami pojawią się wkrótce."
     },
     "filters": {
@@ -265,7 +265,7 @@ window.__MXM_I18N_PL__ = {
   "contact": {
     "hero": {
       "eyebrow": "Kontakt",
-      "title": "Porozmawiajmy o Twoim projekcie",
+      "title": "Porozmawiajmy o Twoim <span class=\"text-accent\">projekcie</span>",
       "text": "Opisz cele — w ciągu 24h dostaniesz konkretną odpowiedź i propozycję kolejnych kroków."
     },
     "form": {
