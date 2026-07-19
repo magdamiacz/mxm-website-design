@@ -3,7 +3,7 @@ name: Deploy to LH
 on:
   push:
     branches:
-      - main  # Akcja uruchomi się po pushu do brancha main
+      - main  
 
 jobs:
   web-deploy:
