@@ -3,7 +3,7 @@ name: Deploy to LH
 on:
   push:
     branches:
-      - main  # or
+      - main  
 
 jobs:
   web-deploy:
