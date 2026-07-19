@@ -20,7 +20,6 @@ jobs:
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: ${{ secrets.FTP_PATH }}
-          # Opcjonalnie: jeśli masz foldery, których nie chcesz przesyłać (np. .git, .env)
           exclude: |
             **/.git*
             **/.git*/**
