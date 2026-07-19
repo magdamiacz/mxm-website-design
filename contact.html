@@ -5,11 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title data-i18n="meta.titleContact">Kontakt — MXM Design</title>
   <meta name="description" content="Skontaktuj się z MXM Design i porozmawiajmy o Twoim projekcie brandingowym, stronie internetowej lub kampanii reklamowej." />
-  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
   <link rel="stylesheet" href="assets/css/tokens.css" />
   <link rel="stylesheet" href="assets/css/base.css" />
   <link rel="stylesheet" href="assets/css/components.css" />
   <link rel="stylesheet" href="assets/css/pages/contact.css" />
+  <script>
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.documentElement.classList.add('js-anim-ready');
+    }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Przejdź do treści</a>
@@ -17,7 +22,7 @@
   <header class="site-header">
     <div class="container site-header__inner">
       <a href="index.html" class="logo">
-        <img src="assets/images/logo/placeholder-logo.svg" alt="MXM Design" />
+        <img src="assets/images/logo/mxm-logo.png" alt="MXM Design" />
       </a>
       <nav class="main-nav" aria-label="Główna nawigacja">
         <a href="index.html" data-i18n="nav.home">Strona główna</a>
@@ -55,11 +60,11 @@
 
   <main id="main">
     <!-- Hero -->
-    <section class="section-large contact-hero">
+    <section class="section-large contact-hero hero-anim">
       <div class="container container-medium" style="text-align:center;">
         <span class="eyebrow" data-i18n="contact.hero.eyebrow">Kontakt</span>
         <h1 data-i18n="contact.hero.title">Porozmawiajmy o Twoim projekcie</h1>
-        <p class="text-lead" data-i18n="contact.hero.text">Wypełnij formularz poniżej — odpowiadam zwykle w ciągu 24 godzin.</p>
+        <p class="text-lead" data-i18n="contact.hero.text">Opisz cele — w ciągu 24h dostaniesz konkretną odpowiedź i propozycję kolejnych kroków.</p>
       </div>
     </section>
 
@@ -90,8 +95,11 @@
           <div class="form-success" data-form-success data-i18n="contact.form.successMessage">Dziękuję! Twoja wiadomość została wysłana — odezwę się wkrótce.</div>
           <div class="form-submit-error" data-form-submit-error data-i18n="contact.form.submitError">Coś poszło nie tak. Spróbuj ponownie lub napisz bezpośrednio na e-mail.</div>
 
-          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-contact-form novalidate>
-            <input type="hidden" name="form-name" value="contact" />
+          <form name="contact" method="POST" action="https://formsubmit.co/mxmgraphics@gmail.com" data-contact-form novalidate>
+            <input type="hidden" name="_subject" value="Nowe zapytanie z MXM Design" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
             <p class="hp-field">
               <label>Nie wypełniaj tego pola / Leave this field blank: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
             </p>
@@ -145,7 +153,7 @@
 
         <aside class="contact-info">
           <h3 data-i18n="contact.info.title">Inne sposoby kontaktu</h3>
-          <p><a href="mailto:hello@mxmdesign.pl">hello@mxmdesign.pl</a></p>
+          <p><a href="mailto:mxmgraphics@gmail.com">mxmgraphics@gmail.com</a></p>
           <p class="contact-info__follow" data-i18n="contact.info.followLabel">Obserwuj MXM Design</p>
           <div class="social-icons social-icons--light">
             <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 13.5h2.5l.4-3H14V8.5c0-.87.24-1.46 1.49-1.46H17V4.36C16.73 4.32 15.8 4.25 14.71 4.25c-2.27 0-3.83 1.39-3.83 3.94V10.5H8.5v3H10.88V20h3.12v-6.5z"/></svg></a>
@@ -162,7 +170,7 @@
       <div class="footer-top">
         <div class="footer-brand">
           <a href="index.html" class="logo">
-            <img src="assets/images/logo/placeholder-logo.svg" alt="MXM Design" style="filter: invert(1);" />
+            <img src="assets/images/logo/mxm-logo.png" alt="MXM Design" />
           </a>
           <p data-i18n="footer.tagline">Studio brandingu i stron internetowych z Polski.</p>
           <div class="social-icons">
@@ -192,7 +200,7 @@
         <div class="footer-col">
           <h4 data-i18n="footer.contactTitle">Kontakt</h4>
           <ul>
-            <li><a href="mailto:hello@mxmdesign.pl">hello@mxmdesign.pl</a></li>
+            <li><a href="mailto:mxmgraphics@gmail.com">mxmgraphics@gmail.com</a></li>
             <li><a href="contact.html" data-i18n="footer.ctaButton">Skontaktuj się</a></li>
           </ul>
         </div>
@@ -206,6 +214,11 @@
 
   <script src="assets/js/nav.js"></script>
   <script src="assets/js/form.js"></script>
+  <script src="assets/js/i18n-pl-data.js"></script>
+  <script src="assets/js/i18n-en-data.js"></script>
   <script src="assets/js/i18n.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@4/dist/bundles/anime.umd.min.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/cursor.js"></script>
 </body>
 </html>

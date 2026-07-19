@@ -51,7 +51,7 @@
   /* Fonts */
   --fonts-body: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --fonts-heading: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --fonts-badge: "Geist Mono", "SFMono-Regular", Consolas, monospace;
+  --fonts-badge: "Montserrat", "Regular", Consolas, monospace;
 
   /* Base colors */
   --color-black: #0a0a0a;
@@ -87,17 +87,17 @@
   --radius-large: 14px;
   --radius-pill: 999px;
 
-  /* Content widths */
-  --content-width-small: 412px;
-  --content-width-medium: 654px;
-  --content-width-large: 896px;
-  --content-width-x-large: 1138px;
-  --content-width-container: 1428px;
+  /* Content widths (~0.73 of previous — less “zoomed in”) */
+  --content-width-small: 300px;
+  --content-width-medium: 480px;
+  --content-width-large: 660px;
+  --content-width-x-large: 840px;
+  --content-width-container: 1040px;
 
-  /* Section padding rhythm */
-  --section-padding-small: 48px;
-  --section-padding-medium: 96px;
-  --section-padding-large: 144px;
+  /* Section padding rhythm (~0.75) */
+  --section-padding-small: 36px;
+  --section-padding-medium: 72px;
+  --section-padding-large: 108px;
 
   /* Motion */
   --duration-fast: 150ms;
@@ -107,7 +107,7 @@
 
 @media (max-width: 768px) {
   :root {
-    --section-padding-medium: 64px;
-    --section-padding-large: 88px;
+    --section-padding-medium: 48px;
+    --section-padding-large: 64px;
   }
 }

@@ -5,6 +5,7 @@
   const successBox = document.querySelector("[data-form-success]");
   const errorBox = document.querySelector("[data-form-submit-error]");
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const ENDPOINT = "https://formsubmit.co/ajax/mxmgraphics@gmail.com";
 
   function setFieldError(field, hasError) {
     const group = field.closest(".form-group");
@@ -29,19 +30,13 @@
     return isValid;
   }
 
-  function encodeForm(data) {
-    return Object.keys(data)
-      .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&");
-  }
-
   form.addEventListener("submit", (e) => {
     e.preventDefault();
     if (errorBox) errorBox.classList.remove("is-visible");
 
     const honeypot = form.querySelector('[name="bot-field"]');
-    if (honeypot && honeypot.value) {
-      // Likely a bot: pretend success without actually submitting.
+    const honey = form.querySelector('[name="_honey"]');
+    if ((honeypot && honeypot.value) || (honey && honey.value)) {
       form.reset();
       form.hidden = true;
       if (successBox) successBox.classList.add("is-visible");
@@ -50,25 +45,38 @@
 
     if (!validate()) return;
 
+    const submitBtn = form.querySelector('[type="submit"]');
+    if (submitBtn) submitBtn.disabled = true;
+
     const formData = new FormData(form);
     const payload = {};
     formData.forEach((value, key) => {
+      if (key === "bot-field" || key === "_honey") return;
       payload[key] = value;
     });
 
-    fetch("/", {
+    fetch(ENDPOINT, {
       method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encodeForm(payload),
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(payload),
     })
       .then((res) => {
         if (!res.ok) throw new Error("Submit failed with status " + res.status);
+        return res.json().catch(() => ({}));
+      })
+      .then(() => {
         form.reset();
         form.hidden = true;
         if (successBox) successBox.classList.add("is-visible");
       })
       .catch(() => {
         if (errorBox) errorBox.classList.add("is-visible");
+      })
+      .finally(() => {
+        if (submitBtn) submitBtn.disabled = false;
       });
   });
 

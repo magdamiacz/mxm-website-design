@@ -5,11 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title data-i18n="meta.titleServices">Usługi — MXM Design</title>
   <meta name="description" content="Branding, projektowanie stron internetowych i reklamy — usługi MXM Design dopasowane do potrzeb Twojej marki." />
-  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
   <link rel="stylesheet" href="assets/css/tokens.css" />
   <link rel="stylesheet" href="assets/css/base.css" />
   <link rel="stylesheet" href="assets/css/components.css" />
   <link rel="stylesheet" href="assets/css/pages/services.css" />
+  <script>
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.documentElement.classList.add('js-anim-ready');
+    }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Przejdź do treści</a>
@@ -17,7 +22,7 @@
   <header class="site-header">
     <div class="container site-header__inner">
       <a href="index.html" class="logo">
-        <img src="assets/images/logo/placeholder-logo.svg" alt="MXM Design" />
+        <img src="assets/images/logo/mxm-logo.png" alt="MXM Design" />
       </a>
       <nav class="main-nav" aria-label="Główna nawigacja">
         <a href="index.html" data-i18n="nav.home">Strona główna</a>
@@ -55,11 +60,11 @@
 
   <main id="main">
     <!-- Hero -->
-    <section class="section-large services-hero">
+    <section class="section-large services-hero hero-anim">
       <div class="container container-large" style="text-align:center;">
         <span class="eyebrow" data-i18n="services.hero.eyebrow">Usługi</span>
-        <h1 data-i18n="services.hero.title">Branding, strony internetowe i reklamy — pod jednym dachem.</h1>
-        <p class="text-lead" data-i18n="services.hero.text">Trzy usługi, jeden spójny cel: marka, która wygląda profesjonalnie i realnie sprzedaje.</p>
+        <h1 data-i18n="services.hero.title">Branding, strona i reklamy — jeden spójny system sprzedaży.</h1>
+        <p class="text-lead" data-i18n="services.hero.text">Trzy usługi, jeden cel: wyglądać profesjonalnie i łatwiej zdobywać klientów.</p>
       </div>
     </section>
 
@@ -81,7 +86,9 @@
         </div>
         <div class="mockup-frame service-visual">
           <div class="mockup-frame__bar"><span></span><span></span><span></span></div>
-          <div class="mockup-frame__body"></div>
+          <div class="mockup-frame__body">
+            <img src="assets/images/services/service-branding.png" alt="Branding — identyfikacja wizualna" width="800" height="600" loading="lazy" />
+          </div>
         </div>
       </div>
     </section>
@@ -91,12 +98,14 @@
       <div class="container container-x-large split-section split-section--reverse">
         <div class="mockup-frame service-visual">
           <div class="mockup-frame__bar"><span></span><span></span><span></span></div>
-          <div class="mockup-frame__body"></div>
+          <div class="mockup-frame__body">
+            <img src="assets/images/services/service-web.png" alt="Strony internetowe — mockup UI" width="800" height="600" loading="lazy" />
+          </div>
         </div>
         <div>
           <span class="eyebrow" data-i18n="services.webdesign.eyebrow">02</span>
           <h2 data-i18n="services.webdesign.title">Strony internetowe</h2>
-          <p class="text-lead" data-i18n="services.webdesign.text">Responsywne strony zaprojektowane z myślą o konwersji, szybkości i wygodzie użytkownika.</p>
+          <p class="text-lead" data-i18n="services.webdesign.text">Strony budowane pod konwersję, szybkość i SEO — żeby ruch zamieniał się w zapytania.</p>
           <ul class="checklist">
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="services.webdesign.item1">Projekt UI/UX</span></li>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="services.webdesign.item2">Responsywny, ręcznie pisany kod</span></li>
@@ -127,12 +136,10 @@
         </div>
         <div class="mockup-frame service-visual">
           <div class="mockup-frame__bar"><span></span><span></span><span></span></div>
-          <div class="mockup-frame__body"></div>
+          <div class="mockup-frame__body">
+            <img src="assets/images/services/service-ads.png" alt="Reklamy — kreacje reklamowe" width="800" height="600" loading="lazy" />
+          </div>
         </div>
-      </div>
-    </section>
-
-    <!-- CTA -->
     <section class="section">
       <div class="container container-medium" style="text-align:center;">
         <h2 data-i18n="services.cta.title">Nie wiesz, czego potrzebujesz?</h2>
@@ -149,7 +156,7 @@
       <div class="footer-top">
         <div class="footer-brand">
           <a href="index.html" class="logo">
-            <img src="assets/images/logo/placeholder-logo.svg" alt="MXM Design" style="filter: invert(1);" />
+            <img src="assets/images/logo/mxm-logo.png" alt="MXM Design" />
           </a>
           <p data-i18n="footer.tagline">Studio brandingu i stron internetowych z Polski.</p>
           <div class="social-icons">
@@ -179,7 +186,7 @@
         <div class="footer-col">
           <h4 data-i18n="footer.contactTitle">Kontakt</h4>
           <ul>
-            <li><a href="mailto:hello@mxmdesign.pl">hello@mxmdesign.pl</a></li>
+            <li><a href="mailto:mxmgraphics@gmail.com">mxmgraphics@gmail.com</a></li>
             <li><a href="contact.html" data-i18n="footer.ctaButton">Skontaktuj się</a></li>
           </ul>
         </div>
@@ -192,6 +199,11 @@
   </footer>
 
   <script src="assets/js/nav.js"></script>
+  <script src="assets/js/i18n-pl-data.js"></script>
+  <script src="assets/js/i18n-en-data.js"></script>
   <script src="assets/js/i18n.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@4/dist/bundles/anime.umd.min.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/cursor.js"></script>
 </body>
 </html>

@@ -4,7 +4,6 @@
 
 .about-hero .hero-visual {
   aspect-ratio: 3 / 4;
-  background: linear-gradient(160deg, var(--color-accent-900), var(--color-black) 70%);
 }
 
 .process-step {

@@ -1,4 +1,4 @@
-{
+window.__MXM_I18N_EN__ = {
   "nav": {
     "home": "Home",
     "about": "About",
@@ -297,4 +297,4 @@
       "step3": "We set the details and get started"
     }
   }
-}
+};

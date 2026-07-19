@@ -5,11 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title data-i18n="meta.titleHome">MXM Design — Studio brandingu i stron internetowych</title>
   <meta name="description" content="MXM Design — studio brandingu i projektowania stron internetowych z Polski. Marki, które zapadają w pamięć, strony, które sprzedają." />
-  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
   <link rel="stylesheet" href="assets/css/tokens.css" />
   <link rel="stylesheet" href="assets/css/base.css" />
   <link rel="stylesheet" href="assets/css/components.css" />
   <link rel="stylesheet" href="assets/css/pages/home.css" />
+  <script>
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.documentElement.classList.add('js-anim-ready');
+    }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Przejdź do treści</a>
@@ -17,7 +22,7 @@
   <header class="site-header">
     <div class="container site-header__inner">
       <a href="index.html" class="logo">
-        <img src="assets/images/logo/placeholder-logo.svg" alt="MXM Design" />
+        <img src="assets/images/logo/mxm-logo.png" alt="MXM Design" />
       </a>
       <nav class="main-nav" aria-label="Główna nawigacja">
         <a href="index.html" class="is-active" data-i18n="nav.home">Strona główna</a>
@@ -55,11 +60,11 @@
 
   <main id="main">
     <!-- Hero -->
-    <section class="section-large hero">
+    <section class="section-large hero hero-anim">
       <div class="container container-x-large">
-        <span class="eyebrow" data-i18n="home.hero.eyebrow">MXM Design — Studio brandingu i stron www</span>
-        <h1 class="hero__title" data-i18n="home.hero.title">Marki, które zapadają w pamięć. Strony, które sprzedają.</h1>
-        <p class="text-lead hero__subtitle" data-i18n="home.hero.subtitle">Projektuję logo, identyfikacje wizualne i strony internetowe dla marek, które chcą wyglądać i działać wyjątkowo — bez kompromisów w jakości kodu i komunikacji.</p>
+        <span class="eyebrow" data-i18n="home.hero.eyebrow">MXM Design — branding i strony www</span>
+        <h1 class="hero__title" data-i18n="home.hero.title">Marka, którą zapamiętują. Strona, która sprzedaje.</h1>
+        <p class="text-lead hero__subtitle" data-i18n="home.hero.subtitle">Projektuję identyfikację wizualną i strony internetowe, które budują zaufanie, wyróżniają Cię na rynku i prowadzą klienta do kontaktu — bez gotowców i bez zgadywania.</p>
         <div class="hero__actions">
           <a href="contact.html" class="btn btn-primary" data-i18n="home.hero.ctaPrimary">Wyceń projekt</a>
           <a href="portfolio.html" class="btn btn-secondary" data-i18n="home.hero.ctaSecondary">Zobacz portfolio</a>
@@ -71,31 +76,31 @@
     <section class="section section-alt">
       <div class="container container-x-large">
         <div class="section-header center">
-          <span class="eyebrow" data-i18n="home.problem.eyebrow">Problem</span>
-          <h2 data-i18n="home.problem.title">Większość stron internetowych wygląda tak samo i niczego nie sprzedaje.</h2>
-          <p class="text-lead" data-i18n="home.problem.text">Gotowe szablony, przypadkowy branding i strony budowane „na szybko” kosztują Cię więcej niż się wydaje: zaufanie klientów, rozpoznawalność marki i sprzedaż. MXM Design zmienia to podejście — od pierwszego szkicu po wdrożenie.</p>
+          <span class="eyebrow" data-i18n="home.problem.eyebrow">Dlaczego to ma znaczenie</span>
+          <h2 data-i18n="home.problem.title">Szablonowa strona kosztuje Cię klientów — zanim zdążysz ich przekonać.</h2>
+          <p class="text-lead" data-i18n="home.problem.text">Gdy wyglądasz jak wszyscy, trudniej o zaufanie, wyższą cenę i decyzję o zakupie. MXM Design łączy branding, UX i czysty kod w jedną spójną ofertę: od pierwszego wrażenia po kliknięcie „Wyślij”.</p>
         </div>
         <div class="grid grid-3">
           <div class="feature-card">
             <div class="icon-badge">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.4 5.5L20 9l-4.4 3.8L17 19l-5-3.2L7 19l1.4-6.2L4 9l5.6-.5L12 3z"/></svg>
             </div>
-            <h3 data-i18n="home.problem.feature1Title">Autentyczny design</h3>
-            <p data-i18n="home.problem.feature1Text">Żadnych gotowców. Każdy projekt powstaje od zera, dopasowany do Twojej marki i odbiorców.</p>
+            <h3 data-i18n="home.problem.feature1Title">Wyróżnialność marki</h3>
+            <p data-i18n="home.problem.feature1Text">Unikalny design od zera — łatwiej Cię zapamiętać i wybrać zamiast konkurencji.</p>
           </div>
           <div class="feature-card">
             <div class="icon-badge">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-5 4 4 8-9"/><path d="M15 7h5v5"/></svg>
             </div>
-            <h3 data-i18n="home.problem.feature2Title">Strony, które sprzedają</h3>
-            <p data-i18n="home.problem.feature2Text">Design to nie tylko estetyka — to konwersja. Projektuję z myślą o realnych celach biznesowych.</p>
+            <h3 data-i18n="home.problem.feature2Title">Więcej zapytań i sprzedaży</h3>
+            <p data-i18n="home.problem.feature2Text">Układ, treść i CTA projektuję pod konwersję, nie tylko „ładny wygląd”.</p>
           </div>
           <div class="feature-card">
             <div class="icon-badge">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 6 2 12 8 18"/><polyline points="16 6 22 12 16 18"/></svg>
             </div>
-            <h3 data-i18n="home.problem.feature3Title">Czysty, jakościowy kod</h3>
-            <p data-i18n="home.problem.feature3Text">Szybkie, responsywne i solidnie napisane strony, które działają bez niespodzianek.</p>
+            <h3 data-i18n="home.problem.feature3Title">Szybka, stabilna strona</h3>
+            <p data-i18n="home.problem.feature3Text">Czysty kod i responsywność: strona ładuje się sprawnie i działa na każdym urządzeniu.</p>
           </div>
         </div>
       </div>
@@ -106,20 +111,22 @@
       <div class="container container-x-large split-section">
         <div>
           <span class="eyebrow" data-i18n="home.why.eyebrow">Dlaczego MXM Design</span>
-          <h2 data-i18n="home.why.title">Współpraca oparta na jasnych zasadach</h2>
-          <p class="text-lead" data-i18n="home.why.text">Wiem, że oddanie projektu w czyjeś ręce wymaga zaufania. Dlatego stawiam na przejrzystą komunikację na każdym etapie — i nie znikam po wdrożeniu.</p>
+          <h2 data-i18n="home.why.title">Partnerstwo, w którym wiesz, za co płacisz</h2>
+          <p class="text-lead" data-i18n="home.why.text">Dostajesz nie tylko pliki — jasny proces, terminowość i wsparcie po starcie. Dzięki temu inwestycja w design realnie wraca w rozpoznawalności i sprzedaży.</p>
           <ul class="checklist">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="home.why.check1">Jasna komunikacja na każdym etapie projektu</span></li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="home.why.check2">Wsparcie i wdrożenie po oddaniu strony</span></li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="home.why.check3">Pakiet darmowych grafik w cenie strony</span></li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="home.why.check4">Unikalny design dopasowany do Twojej marki</span></li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="home.why.check5">Kod pisany z dbałością o jakość i szybkość</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="home.why.check1">Przejrzysty brief, wycena i harmonogram od startu</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="home.why.check2">Wdrożenie i wsparcie po publikacji strony</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="home.why.check3">Pakiet grafik social media w cenie strony</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="home.why.check4">Design dopasowany do Twoich klientów i oferty</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="home.why.check5">Kod zoptymalizowany pod szybkość i SEO</span></li>
           </ul>
           <a href="about.html#process" class="btn btn-secondary" data-i18n="home.why.ctaButton">Poznaj mój proces</a>
         </div>
         <div class="mockup-frame">
           <div class="mockup-frame__bar"><span></span><span></span><span></span></div>
-          <div class="mockup-frame__body"></div>
+          <div class="mockup-frame__body">
+            <img src="assets/images/home-mockup.png" alt="Podgląd projektu strony internetowej" width="800" height="600" loading="lazy" />
+          </div>
         </div>
       </div>
     </section>
@@ -142,19 +149,33 @@
       </div>
     </section>
 
-    <!-- Testimonial -->
+    <!-- Testimonials -->
     <section class="section">
       <div class="container container-x-large">
-        <div class="testimonial">
+        <div class="testimonial" data-testimonials role="region" aria-roledescription="carousel" data-i18n-aria-label="home.testimonials.regionLabel" aria-label="Opinie klientów">
           <div class="testimonial__media" aria-hidden="true">
+            <img data-testimonial-media src="assets/images/testimonials/testimonial-1.png" alt="" width="800" height="600" />
             <span class="testimonial__badge">MXM Design</span>
           </div>
           <div class="testimonial__body">
-            <p class="testimonial__quote" data-i18n="home.testimonial.quote">„Strona od MXM Design zmieniła sposób, w jaki klienci postrzegają naszą markę. Proces był jasny, szybki i bez niespodzianek — dokładnie to, czego potrzebowaliśmy.”</p>
-            <p class="testimonial__author"><strong data-i18n="home.testimonial.author">Klientka MXM Design</strong> — <span data-i18n="home.testimonial.role">Case study w przygotowaniu</span></p>
+            <div class="testimonial__viewport" aria-live="polite">
+              <div class="testimonial__slide is-active" data-testimonial-slide data-media="assets/images/testimonials/testimonial-1.png">
+                <p class="testimonial__quote" data-i18n="home.testimonials.item1Quote">Po nowej stronie klienci od razu traktują nas poważniej. Proces był jasny, terminy dotrzymane — a zapytań z formularza mamy wyraźnie więcej.</p>
+                <p class="testimonial__author"><strong data-i18n="home.testimonials.item1Author">Anna K.</strong> — <span data-i18n="home.testimonials.item1Role">założycielka marki usługowej</span></p>
+              </div>
+              <div class="testimonial__slide" data-testimonial-slide data-media="assets/images/testimonials/testimonial-2.png" hidden>
+                <p class="testimonial__quote" data-i18n="home.testimonials.item2Quote">Wreszcie mamy branding, który wygląda spójnie wszędzie: od logo po social media. Klienci łatwiej nas rozpoznają i chętniej zostawiają dane.</p>
+                <p class="testimonial__author"><strong data-i18n="home.testimonials.item2Author">Michał R.</strong> — <span data-i18n="home.testimonials.item2Role">właściciel e-commerce</span></p>
+              </div>
+              <div class="testimonial__slide" data-testimonial-slide data-media="assets/images/testimonials/testimonial-3.png" hidden>
+                <p class="testimonial__quote" data-i18n="home.testimonials.item3Quote">Nie dostaliśmy „ładnego szablonu”, tylko stronę pod nasze cele sprzedażowe. Wdrożenie poszło gładko, a wsparcie po starcie uspokoiło cały zespół.</p>
+                <p class="testimonial__author"><strong data-i18n="home.testimonials.item3Author">Karolina W.</strong> — <span data-i18n="home.testimonials.item3Role">managerka marketingu</span></p>
+              </div>
+            </div>
             <div class="testimonial__controls">
-              <button type="button" aria-label="Poprzednia opinia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg></button>
-              <button type="button" aria-label="Następna opinia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
+              <button type="button" data-testimonial-prev data-i18n-aria-label="home.testimonials.prevLabel" aria-label="Poprzednia opinia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg></button>
+              <div class="testimonial__dots" data-testimonial-dots role="tablist" data-i18n-aria-label="home.testimonials.dotsLabel" aria-label="Wybór opinii"></div>
+              <button type="button" data-testimonial-next data-i18n-aria-label="home.testimonials.nextLabel" aria-label="Następna opinia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
             </div>
           </div>
         </div>
@@ -240,17 +261,17 @@
         </div>
         <div class="grid grid-3">
           <a href="portfolio.html" class="work-preview-card">
-            <div class="thumb"></div>
+            <div class="thumb"><img src="assets/images/work/work-aurora.png" alt="Projekt Aurora — branding" width="640" height="480" loading="lazy" /></div>
             <span class="tag" data-i18n="home.work.project1Tag">Branding</span>
             <h3 data-i18n="home.work.project1Name">Projekt Aurora</h3>
           </a>
           <a href="portfolio.html" class="work-preview-card">
-            <div class="thumb"></div>
+            <div class="thumb"><img src="assets/images/work/work-nova.png" alt="Projekt Nova — strona WWW" width="640" height="480" loading="lazy" /></div>
             <span class="tag" data-i18n="home.work.project2Tag">Strona WWW</span>
             <h3 data-i18n="home.work.project2Name">Projekt Nova</h3>
           </a>
           <a href="portfolio.html" class="work-preview-card">
-            <div class="thumb"></div>
+            <div class="thumb"><img src="assets/images/work/work-lumen.png" alt="Projekt Lumen — reklamy" width="640" height="480" loading="lazy" /></div>
             <span class="tag" data-i18n="home.work.project3Tag">Reklamy</span>
             <h3 data-i18n="home.work.project3Name">Projekt Lumen</h3>
           </a>
@@ -337,7 +358,7 @@
       <div class="footer-top">
         <div class="footer-brand">
           <a href="index.html" class="logo">
-            <img src="assets/images/logo/placeholder-logo.svg" alt="MXM Design" style="filter: invert(1);" />
+            <img src="assets/images/logo/mxm-logo.png" alt="MXM Design" />
           </a>
           <p data-i18n="footer.tagline">Studio brandingu i stron internetowych z Polski.</p>
           <div class="social-icons">
@@ -367,7 +388,7 @@
         <div class="footer-col">
           <h4 data-i18n="footer.contactTitle">Kontakt</h4>
           <ul>
-            <li><a href="mailto:hello@mxmdesign.pl">hello@mxmdesign.pl</a></li>
+            <li><a href="mailto:mxmgraphics@gmail.com">mxmgraphics@gmail.com</a></li>
             <li><a href="contact.html" data-i18n="footer.ctaButton">Skontaktuj się</a></li>
           </ul>
         </div>
@@ -381,6 +402,12 @@
 
   <script src="assets/js/nav.js"></script>
   <script src="assets/js/faq.js"></script>
+  <script src="assets/js/i18n-pl-data.js"></script>
+  <script src="assets/js/i18n-en-data.js"></script>
   <script src="assets/js/i18n.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@4/dist/bundles/anime.umd.min.js"></script>
+  <script src="assets/js/testimonials.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/cursor.js"></script>
 </body>
 </html>

@@ -104,8 +104,9 @@
 }
 
 .logo img {
-  height: 28px;
+  height: 36px;
   width: auto;
+  border-radius: 50%;
 }
 
 .main-nav {
@@ -313,18 +314,28 @@
 }
 
 .testimonial__media {
-  height: 100%;
+  align-self: stretch;
   min-height: 320px;
   position: relative;
   background: var(--color-black);
-  background-image: radial-gradient(circle at 30% 25%, rgba(76, 63, 214, 0.55), transparent 60%),
-    repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0 1px, transparent 1px 14px);
+  overflow: hidden;
+}
+
+.testimonial__media img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
 }
 
 .testimonial__badge {
   position: absolute;
   bottom: 16px;
   left: 16px;
+  z-index: 1;
   background: var(--color-white);
   color: var(--color-black);
   padding: 6px 12px;
@@ -337,8 +348,41 @@
   padding: 40px 40px 40px 0;
 }
 
+.testimonial__viewport {
+  min-height: 180px;
+  position: relative;
+}
+
+.testimonial__slide {
+  transition: opacity 0.2s var(--ease-out-expo);
+}
+
+.testimonial__slide[hidden] {
+  display: none;
+}
+
+.testimonial__slide.is-active {
+  display: block;
+}
+
+.testimonial__dot {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.35);
+  cursor: pointer;
+  transition: transform var(--duration-fast) var(--ease-out-expo), background-color var(--duration-fast) var(--ease-out-expo);
+}
+
+.testimonial__dot.is-active {
+  background: var(--color-white);
+  transform: scale(1.35);
+}
+
 .testimonial__quote {
-  font-size: clamp(1.125rem, 1rem + 0.6vw, 1.5rem);
+  font-size: clamp(1.05rem, 0.95rem + 0.45vw, 1.35rem);
   line-height: 1.45;
   font-weight: 500;
 }
@@ -351,11 +395,20 @@
 
 .testimonial__controls {
   display: flex;
+  align-items: center;
   gap: 12px;
   margin-top: 32px;
 }
 
-.testimonial__controls button {
+.testimonial__dots {
+  display: flex;
+  gap: 8px;
+  flex: 1;
+  justify-content: center;
+}
+
+.testimonial__controls [data-testimonial-prev],
+.testimonial__controls [data-testimonial-next] {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -364,11 +417,19 @@
   align-items: center;
   justify-content: center;
   color: var(--color-white);
+  background: transparent;
   transition: background-color var(--duration-fast) var(--ease-out-expo);
 }
 
-.testimonial__controls button:hover {
+.testimonial__controls [data-testimonial-prev]:hover,
+.testimonial__controls [data-testimonial-next]:hover {
   background: rgba(255, 255, 255, 0.1);
+}
+
+.testimonial__controls [data-testimonial-prev] svg,
+.testimonial__controls [data-testimonial-next] svg {
+  width: 18px;
+  height: 18px;
 }
 
 @media (max-width: 780px) {
@@ -740,8 +801,8 @@ textarea.form-control {
   padding-bottom: 56px;
 }
 
-.footer-brand .logo {
-  color: var(--color-white);
+.footer-brand .logo img {
+  height: 40px;
 }
 
 .footer-brand p {
@@ -880,6 +941,16 @@ textarea.form-control {
 .mockup-frame__body {
   aspect-ratio: 4 / 3;
   background: linear-gradient(160deg, var(--color-accent-900), var(--color-black) 70%);
+  overflow: hidden;
+}
+
+.mockup-frame__body img,
+.hero-visual img,
+.thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 @media (max-width: 860px) {
@@ -897,14 +968,10 @@ textarea.form-control {
   aspect-ratio: 16 / 11;
   position: relative;
   background: var(--color-neutral-100);
-  background-image: radial-gradient(circle at 75% 25%, rgba(76, 63, 214, 0.16), transparent 55%),
-    repeating-linear-gradient(135deg, rgba(10, 10, 10, 0.05) 0 1px, transparent 1px 14px);
 }
 
 .hero-visual.is-dark {
   background: var(--color-black);
-  background-image: radial-gradient(circle at 30% 20%, rgba(76, 63, 214, 0.6), transparent 60%),
-    repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0 1px, transparent 1px 14px);
 }
 
 /* Recent work preview cards
@@ -914,20 +981,9 @@ textarea.form-control {
   border-radius: var(--radius-default);
   aspect-ratio: 4 / 3;
   margin-bottom: 16px;
+  overflow: hidden;
   background: var(--color-neutral-100);
-  background-image: radial-gradient(circle at 30% 30%, rgba(76, 63, 214, 0.16), transparent 60%),
-    repeating-linear-gradient(135deg, rgba(10, 10, 10, 0.045) 0 1px, transparent 1px 14px);
   transition: transform var(--duration-normal) var(--ease-out-expo);
-}
-
-.work-preview-card:nth-child(2) .thumb {
-  background-image: radial-gradient(circle at 70% 35%, rgba(76, 63, 214, 0.16), transparent 60%),
-    repeating-linear-gradient(135deg, rgba(10, 10, 10, 0.045) 0 1px, transparent 1px 14px);
-}
-
-.work-preview-card:nth-child(3) .thumb {
-  background-image: radial-gradient(circle at 50% 70%, rgba(76, 63, 214, 0.16), transparent 60%),
-    repeating-linear-gradient(135deg, rgba(10, 10, 10, 0.045) 0 1px, transparent 1px 14px);
 }
 
 .work-preview-card:hover .thumb {
@@ -960,4 +1016,67 @@ textarea.form-control {
   justify-content: center;
   margin-top: 32px;
   flex-wrap: wrap;
+}
+
+/* Custom cursor
+   ========================================================================== */
+.has-custom-cursor,
+.has-custom-cursor * {
+  cursor: none !important;
+}
+
+.mxm-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  will-change: transform;
+}
+
+.cursor-visible .mxm-cursor {
+  opacity: 1;
+}
+
+.mxm-cursor__dot {
+  width: 6px;
+  height: 6px;
+  margin: -3px 0 0 -3px;
+  border-radius: 50%;
+  background: var(--color-black);
+  mix-blend-mode: difference;
+}
+
+.mxm-cursor__ring {
+  width: 36px;
+  height: 36px;
+  margin: -18px 0 0 -18px;
+  border-radius: 50%;
+  border: 1px solid rgba(10, 10, 10, 0.45);
+  transition: width 0.25s var(--ease-out-expo), height 0.25s var(--ease-out-expo), margin 0.25s var(--ease-out-expo), border-color 0.25s ease, background-color 0.25s ease;
+}
+
+.cursor-hover .mxm-cursor__ring {
+  width: 52px;
+  height: 52px;
+  margin: -26px 0 0 -26px;
+  border-color: var(--color-accent);
+  background: rgba(55, 48, 163, 0.08);
+}
+
+.cursor-hover .mxm-cursor__dot {
+  background: var(--color-accent);
+  mix-blend-mode: normal;
+}
+
+@media (pointer: coarse) {
+  .has-custom-cursor,
+  .has-custom-cursor * {
+    cursor: auto !important;
+  }
+  .mxm-cursor {
+    display: none !important;
+  }
 }

@@ -15,6 +15,7 @@
   border-radius: var(--radius-default);
   background: var(--color-neutral-200);
   margin-bottom: 16px;
+  overflow: hidden;
 }
 
 .project-card .tag {

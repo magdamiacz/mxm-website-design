@@ -5,11 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title data-i18n="meta.titlePortfolio">Portfolio — MXM Design</title>
   <meta name="description" content="Wybrane realizacje MXM Design z zakresu brandingu, projektowania stron internetowych i reklam." />
-  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
   <link rel="stylesheet" href="assets/css/tokens.css" />
   <link rel="stylesheet" href="assets/css/base.css" />
   <link rel="stylesheet" href="assets/css/components.css" />
   <link rel="stylesheet" href="assets/css/pages/portfolio.css" />
+  <script>
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.documentElement.classList.add('js-anim-ready');
+    }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Przejdź do treści</a>
@@ -17,7 +22,7 @@
   <header class="site-header">
     <div class="container site-header__inner">
       <a href="index.html" class="logo">
-        <img src="assets/images/logo/placeholder-logo.svg" alt="MXM Design" />
+        <img src="assets/images/logo/mxm-logo.png" alt="MXM Design" />
       </a>
       <nav class="main-nav" aria-label="Główna nawigacja">
         <a href="index.html" data-i18n="nav.home">Strona główna</a>
@@ -55,11 +60,11 @@
 
   <main id="main">
     <!-- Hero -->
-    <section class="section-large portfolio-hero">
+    <section class="section-large portfolio-hero hero-anim">
       <div class="container container-large" style="text-align:center;">
         <span class="eyebrow" data-i18n="portfolio.hero.eyebrow">Portfolio</span>
         <h1 data-i18n="portfolio.hero.title">Wybrane realizacje</h1>
-        <p class="text-lead" data-i18n="portfolio.hero.text">Poniżej znajdziesz przykładowe projekty. Pełne case studies pojawią się tutaj wkrótce.</p>
+        <p class="text-lead" data-i18n="portfolio.hero.text">Przykłady kierunku i jakości. Pełne case studies z wynikami pojawią się wkrótce.</p>
       </div>
     </section>
 
@@ -79,40 +84,40 @@
       <div class="container container-x-large">
         <div class="grid grid-3 project-grid">
           <div class="card project-card" data-project-card data-category="branding">
-            <div class="thumb"></div>
+            <div class="thumb"><img src="assets/images/work/work-aurora.png" alt="Aurora" width="640" height="480" loading="lazy" /></div>
             <span class="tag" data-i18n="portfolio.filters.branding">Branding</span>
             <h3 data-i18n="portfolio.projects.project1Name">Aurora</h3>
-            <p data-i18n="portfolio.projects.project1Desc">Case study w przygotowaniu.</p>
+            <p data-i18n="portfolio.projects.project1Desc">Identyfikacja pod wyróżnialność i zaufanie.</p>
           </div>
           <div class="card project-card" data-project-card data-category="webdesign">
-            <div class="thumb"></div>
+            <div class="thumb"><img src="assets/images/work/work-nova.png" alt="Nova" width="640" height="480" loading="lazy" /></div>
             <span class="tag" data-i18n="portfolio.filters.webdesign">Strony WWW</span>
             <h3 data-i18n="portfolio.projects.project2Name">Nova</h3>
-            <p data-i18n="portfolio.projects.project2Desc">Case study w przygotowaniu.</p>
+            <p data-i18n="portfolio.projects.project2Desc">Strona WWW zaprojektowana pod konwersję.</p>
           </div>
           <div class="card project-card" data-project-card data-category="ads">
-            <div class="thumb"></div>
+            <div class="thumb"><img src="assets/images/work/work-lumen.png" alt="Lumen" width="640" height="480" loading="lazy" /></div>
             <span class="tag" data-i18n="portfolio.filters.ads">Reklamy</span>
             <h3 data-i18n="portfolio.projects.project3Name">Lumen</h3>
-            <p data-i18n="portfolio.projects.project3Desc">Case study w przygotowaniu.</p>
+            <p data-i18n="portfolio.projects.project3Desc">Kreacje reklamowe spójne z marką.</p>
           </div>
           <div class="card project-card" data-project-card data-category="branding">
-            <div class="thumb"></div>
+            <div class="thumb"><img src="assets/images/work/work-vireo.png" alt="Vireo" width="640" height="480" loading="lazy" /></div>
             <span class="tag" data-i18n="portfolio.filters.branding">Branding</span>
             <h3 data-i18n="portfolio.projects.project4Name">Vireo</h3>
-            <p data-i18n="portfolio.projects.project4Desc">Case study w przygotowaniu.</p>
+            <p data-i18n="portfolio.projects.project4Desc">Branding dla marki premium.</p>
           </div>
           <div class="card project-card" data-project-card data-category="webdesign">
-            <div class="thumb"></div>
+            <div class="thumb"><img src="assets/images/work/work-solace.png" alt="Solace" width="640" height="480" loading="lazy" /></div>
             <span class="tag" data-i18n="portfolio.filters.webdesign">Strony WWW</span>
             <h3 data-i18n="portfolio.projects.project5Name">Solace</h3>
-            <p data-i18n="portfolio.projects.project5Desc">Case study w przygotowaniu.</p>
+            <p data-i18n="portfolio.projects.project5Desc">Spokojny, konwersyjny UX strony.</p>
           </div>
           <div class="card project-card" data-project-card data-category="ads">
-            <div class="thumb"></div>
+            <div class="thumb"><img src="assets/images/work/work-ember.png" alt="Ember" width="640" height="480" loading="lazy" /></div>
             <span class="tag" data-i18n="portfolio.filters.ads">Reklamy</span>
             <h3 data-i18n="portfolio.projects.project6Name">Ember</h3>
-            <p data-i18n="portfolio.projects.project6Desc">Case study w przygotowaniu.</p>
+            <p data-i18n="portfolio.projects.project6Desc">Kampania wizualna przyciągająca uwagę.</p>
           </div>
         </div>
       </div>
@@ -134,7 +139,7 @@
       <div class="footer-top">
         <div class="footer-brand">
           <a href="index.html" class="logo">
-            <img src="assets/images/logo/placeholder-logo.svg" alt="MXM Design" style="filter: invert(1);" />
+            <img src="assets/images/logo/mxm-logo.png" alt="MXM Design" />
           </a>
           <p data-i18n="footer.tagline">Studio brandingu i stron internetowych z Polski.</p>
           <div class="social-icons">
@@ -164,7 +169,7 @@
         <div class="footer-col">
           <h4 data-i18n="footer.contactTitle">Kontakt</h4>
           <ul>
-            <li><a href="mailto:hello@mxmdesign.pl">hello@mxmdesign.pl</a></li>
+            <li><a href="mailto:mxmgraphics@gmail.com">mxmgraphics@gmail.com</a></li>
             <li><a href="contact.html" data-i18n="footer.ctaButton">Skontaktuj się</a></li>
           </ul>
         </div>
@@ -178,6 +183,11 @@
 
   <script src="assets/js/nav.js"></script>
   <script src="assets/js/portfolio-filter.js"></script>
+  <script src="assets/js/i18n-pl-data.js"></script>
+  <script src="assets/js/i18n-en-data.js"></script>
   <script src="assets/js/i18n.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@4/dist/bundles/anime.umd.min.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/cursor.js"></script>
 </body>
 </html>

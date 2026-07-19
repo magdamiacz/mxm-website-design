@@ -30,6 +30,16 @@
 
   function loadDict(lang) {
     if (cache[lang]) return Promise.resolve(cache[lang]);
+
+    if (lang === "en" && window.__MXM_I18N_EN__) {
+      cache.en = window.__MXM_I18N_EN__;
+      return Promise.resolve(cache.en);
+    }
+    if (lang === "pl" && window.__MXM_I18N_PL__) {
+      cache.pl = window.__MXM_I18N_PL__;
+      return Promise.resolve(cache.pl);
+    }
+
     return fetch("assets/js/i18n/" + lang + ".json")
       .then((res) => (res.ok ? res.json() : Promise.reject(new Error("i18n fetch failed"))))
       .then((dict) => {
@@ -43,19 +53,39 @@
     setActiveButton(lang);
     localStorage.setItem(LANG_KEY, lang);
 
+    const applyAndNotify = (dict) => {
+      applyDict(dict);
+      document.dispatchEvent(
+        new CustomEvent("mxm:langchange", { detail: { lang: lang, dict: dict } })
+      );
+    };
+
     if (lang === DEFAULT_LANG) {
-      // Default markup is authored in Polish; reload it directly instead of
-      // depending on a fetch (keeps the toggle instant and works offline).
-      loadDict(DEFAULT_LANG).then(applyDict).catch(() => {});
+      loadDict(DEFAULT_LANG).then(applyAndNotify).catch(() => {});
       return;
     }
 
     loadDict(lang)
-      .then(applyDict)
+      .then(applyAndNotify)
       .catch(() => {
-        // Falls back silently to whatever is on the page (Polish default).
+        if (window.__MXM_I18N_EN__) {
+          cache.en = window.__MXM_I18N_EN__;
+          applyAndNotify(cache.en);
+        }
       });
   }
+
+  window.mxmI18n = {
+    getKey: getKey,
+    getDict: function () {
+      const lang = localStorage.getItem(LANG_KEY) || DEFAULT_LANG;
+      return (
+        cache[lang] ||
+        (lang === "en" ? window.__MXM_I18N_EN__ : null) ||
+        (lang === "pl" ? window.__MXM_I18N_PL__ : null)
+      );
+    },
+  };
 
   document.addEventListener("click", (e) => {
     const btn = e.target.closest("[data-lang-btn]");

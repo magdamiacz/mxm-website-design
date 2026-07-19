@@ -5,11 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title data-i18n="meta.titleAbout">O mnie — MXM Design</title>
   <meta name="description" content="Poznaj MXM Design — studio brandingu i projektowania stron internetowych z Polski, oraz wartości, którymi kieruję się w każdym projekcie." />
-  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
   <link rel="stylesheet" href="assets/css/tokens.css" />
   <link rel="stylesheet" href="assets/css/base.css" />
   <link rel="stylesheet" href="assets/css/components.css" />
   <link rel="stylesheet" href="assets/css/pages/about.css" />
+  <script>
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.documentElement.classList.add('js-anim-ready');
+    }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Przejdź do treści</a>
@@ -17,7 +22,7 @@
   <header class="site-header">
     <div class="container site-header__inner">
       <a href="index.html" class="logo">
-        <img src="assets/images/logo/placeholder-logo.svg" alt="MXM Design" />
+        <img src="assets/images/logo/mxm-logo.png" alt="MXM Design" />
       </a>
       <nav class="main-nav" aria-label="Główna nawigacja">
         <a href="index.html" data-i18n="nav.home">Strona główna</a>
@@ -55,14 +60,16 @@
 
   <main id="main">
     <!-- Hero -->
-    <section class="section-large about-hero">
+    <section class="section-large about-hero hero-anim">
       <div class="container container-x-large split-section">
         <div>
           <span class="eyebrow" data-i18n="about.hero.eyebrow">O mnie</span>
-          <h1 data-i18n="about.hero.title">Projektuję marki i strony, w które sama bym uwierzyła.</h1>
-          <p class="text-lead" data-i18n="about.hero.text">MXM Design to studio brandingu i projektowania stron internetowych z Polski. Łączę estetykę z funkcjonalnością, żeby Twoja marka nie tylko dobrze wyglądała, ale też realnie działała.</p>
+          <h1 data-i18n="about.hero.title">Projektuję marki i strony, które budują zaufanie od pierwszego ekranu.</h1>
+          <p class="text-lead" data-i18n="about.hero.text">MXM Design łączy branding, UX i kod, żeby Twoja oferta wyglądała profesjonalnie i łatwiej sprzedawała — bez kompromisów w jakości.</p>
         </div>
-        <div class="hero-visual" aria-hidden="true"></div>
+        <div class="hero-visual">
+          <img src="assets/images/about/about-portrait.png" alt="MXM Design — portret" width="600" height="800" />
+        </div>
       </div>
     </section>
 
@@ -167,7 +174,7 @@
       <div class="footer-top">
         <div class="footer-brand">
           <a href="index.html" class="logo">
-            <img src="assets/images/logo/placeholder-logo.svg" alt="MXM Design" style="filter: invert(1);" />
+            <img src="assets/images/logo/mxm-logo.png" alt="MXM Design" />
           </a>
           <p data-i18n="footer.tagline">Studio brandingu i stron internetowych z Polski.</p>
           <div class="social-icons">
@@ -197,7 +204,7 @@
         <div class="footer-col">
           <h4 data-i18n="footer.contactTitle">Kontakt</h4>
           <ul>
-            <li><a href="mailto:hello@mxmdesign.pl">hello@mxmdesign.pl</a></li>
+            <li><a href="mailto:mxmgraphics@gmail.com">mxmgraphics@gmail.com</a></li>
             <li><a href="contact.html" data-i18n="footer.ctaButton">Skontaktuj się</a></li>
           </ul>
         </div>
@@ -210,6 +217,11 @@
   </footer>
 
   <script src="assets/js/nav.js"></script>
+  <script src="assets/js/i18n-pl-data.js"></script>
+  <script src="assets/js/i18n-en-data.js"></script>
   <script src="assets/js/i18n.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@4/dist/bundles/anime.umd.min.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/cursor.js"></script>
 </body>
 </html>
