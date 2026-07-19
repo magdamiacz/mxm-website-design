@@ -1,20 +1,27 @@
 name: Deploy to LH
+
 on:
   push:
     branches:
-      - main  # lub 'master', zależnie od nazwy Twojej głównej gałęzi
+      - main  # Akcja uruchomi się po pushu do brancha main
 
 jobs:
   web-deploy:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-      
-    - name: Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-      with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        server-dir: /public_html/
+      - name: Get latest code
+        uses: actions/checkout@v4
+
+      - name: Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: ${{ secrets.FTP_PATH }}
+          # Opcjonalnie: jeśli masz foldery, których nie chcesz przesyłać (np. .git, .env)
+          exclude: |
+            **/.git*
+            **/.git*/**
+            node_modules/**
