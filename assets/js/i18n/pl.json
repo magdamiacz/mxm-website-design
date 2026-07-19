@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "home": "Strona główna",
+    "about": "O mnie",
+    "services": "Usługi",
+    "portfolio": "Portfolio",
+    "contact": "Kontakt",
+    "cta": "Wyceń projekt"
+  },
+  "meta": {
+    "titleHome": "MXM Design — Studio brandingu i stron internetowych",
+    "titleAbout": "O mnie — MXM Design",
+    "titleServices": "Usługi — MXM Design",
+    "titlePortfolio": "Portfolio — MXM Design",
+    "titleContact": "Kontakt — MXM Design"
+  },
+  "footer": {
+    "tagline": "Studio brandingu i stron internetowych z Polski.",
+    "pagesTitle": "Strony",
+    "servicesTitle": "Usługi",
+    "contactTitle": "Kontakt",
+    "ctaTitle": "Masz pomysł na projekt?",
+    "ctaText": "Napisz do mnie — porozmawiajmy o szczegółach.",
+    "ctaButton": "Skontaktuj się",
+    "rights": "Wszelkie prawa zastrzeżone.",
+    "madeIn": "Zaprojektowane w Polsce."
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "MXM Design — Studio brandingu i stron www",
+      "title": "Marki, które zapadają w pamięć. Strony, które sprzedają.",
+      "subtitle": "Projektuję logo, identyfikacje wizualne i strony internetowe dla marek, które chcą wyglądać i działać wyjątkowo — bez kompromisów w jakości kodu i komunikacji.",
+      "ctaPrimary": "Wyceń projekt",
+      "ctaSecondary": "Zobacz portfolio"
+    },
+    "problem": {
+      "eyebrow": "Problem",
+      "title": "Większość stron internetowych wygląda tak samo i niczego nie sprzedaje.",
+      "text": "Gotowe szablony, przypadkowy branding i strony budowane „na szybko” kosztują Cię więcej niż się wydaje: zaufanie klientów, rozpoznawalność marki i sprzedaż. MXM Design zmienia to podejście — od pierwszego szkicu po wdrożenie.",
+      "feature1Title": "Autentyczny design",
+      "feature1Text": "Żadnych gotowców. Każdy projekt powstaje od zera, dopasowany do Twojej marki i odbiorców.",
+      "feature2Title": "Strony, które sprzedają",
+      "feature2Text": "Design to nie tylko estetyka — to konwersja. Projektuję z myślą o realnych celach biznesowych.",
+      "feature3Title": "Czysty, jakościowy kod",
+      "feature3Text": "Szybkie, responsywne i solidnie napisane strony, które działają bez niespodzianek."
+    },
+    "why": {
+      "eyebrow": "Dlaczego MXM Design",
+      "title": "Współpraca oparta na jasnych zasadach",
+      "text": "Wiem, że oddanie projektu w czyjeś ręce wymaga zaufania. Dlatego stawiam na przejrzystą komunikację na każdym etapie — i nie znikam po wdrożeniu.",
+      "check1": "Jasna komunikacja na każdym etapie projektu",
+      "check2": "Wsparcie i wdrożenie po oddaniu strony",
+      "check3": "Pakiet darmowych grafik w cenie strony",
+      "check4": "Unikalny design dopasowany do Twojej marki",
+      "check5": "Kod pisany z dbałością o jakość i szybkość",
+      "ctaButton": "Poznaj mój proces"
+    },
+    "stats": {
+      "stat1Number": "30+",
+      "stat1Label": "zrealizowanych projektów",
+      "stat2Number": "5+",
+      "stat2Label": "lat doświadczenia",
+      "stat3Number": "24h",
+      "stat3Label": "czas odpowiedzi na wiadomość"
+    },
+    "testimonial": {
+      "quote": "Strona od MXM Design zmieniła sposób, w jaki klienci postrzegają naszą markę. Proces był jasny, szybki i bez niespodzianek — dokładnie to, czego potrzebowaliśmy.",
+      "author": "Klientka MXM Design",
+      "role": "Case study w przygotowaniu"
+    },
+    "tools": {
+      "eyebrow": "Narzędzia",
+      "title": "Narzędzia i platformy, z których korzystam"
+    },
+    "packages": {
+      "eyebrow": "Oferta",
+      "title": "Wybierz zakres, który pasuje do Twojego projektu",
+      "subtitle": "Każdy projekt jest inny — dlatego finalna wycena zawsze jest dopasowana indywidualnie.",
+      "brandingName": "Branding",
+      "brandingDesc": "Kompletna identyfikacja wizualna Twojej marki.",
+      "brandingItem1": "Logo i warianty logotypu",
+      "brandingItem2": "Paleta kolorów i typografia",
+      "brandingItem3": "Księga znaku (brand book)",
+      "brandingItem4": "Pakiet grafik do social media",
+      "webName": "Strona WWW",
+      "webDesc": "Responsywna strona internetowa zaprojektowana pod konwersję.",
+      "webItem1": "Projekt UI/UX dopasowany do marki",
+      "webItem2": "Responsywny kod wysokiej jakości",
+      "webItem3": "Optymalizacja pod SEO i szybkość",
+      "webItem4": "Wdrożenie i pakiet darmowych grafik",
+      "webItem5": "Wsparcie po starcie strony",
+      "adsName": "Reklamy",
+      "adsDesc": "Grafiki i kreacje reklamowe, które przyciągają uwagę.",
+      "adsItem1": "Kreacje na Meta Ads i Google Ads",
+      "adsItem2": "Banery i grafiki produktowe",
+      "adsItem3": "Dopasowanie do identyfikacji marki",
+      "adsItem4": "Gotowe formaty pod każdą platformę",
+      "price": "Wycena indywidualna",
+      "ctaButton": "Zapytaj o wycenę"
+    },
+    "work": {
+      "eyebrow": "Portfolio",
+      "title": "Ostatnie realizacje",
+      "viewAll": "Zobacz całe portfolio",
+      "project1Name": "Projekt Aurora",
+      "project1Tag": "Branding",
+      "project2Name": "Projekt Nova",
+      "project2Tag": "Strona WWW",
+      "project3Name": "Projekt Lumen",
+      "project3Tag": "Reklamy"
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Najczęściej zadawane pytania",
+      "q1": "Jak wygląda proces współpracy?",
+      "a1": "Zaczynamy od krótkiej rozmowy o Twoich celach i marce, następnie przygotowuję wycenę i harmonogram. Po akceptacji przechodzimy do projektowania, konsultacji i wdrożenia.",
+      "q2": "Ile trwa realizacja strony internetowej?",
+      "a2": "W zależności od zakresu projektu, standardowa strona internetowa powstaje w 2–4 tygodnie od zaakceptowania projektu graficznego.",
+      "q3": "Ile poprawek jest wliczonych w cenę?",
+      "a3": "Każdy projekt zawiera ustaloną liczbę rund poprawek na etapie projektowania graficznego, dzięki czemu masz pewność, że finalny efekt spełnia Twoje oczekiwania.",
+      "q4": "Co dokładnie otrzymuję razem ze stroną internetową?",
+      "a4": "Oprócz responsywnej, w pełni działającej strony otrzymujesz pakiet darmowych grafik do wykorzystania w mediach społecznościowych oraz wsparcie przy wdrożeniu.",
+      "q5": "Czy pomagasz też po zakończeniu projektu?",
+      "a5": "Tak — zostaję z Tobą na etapie wdrożenia strony na serwer/domenę i jestem dostępna, jeśli pojawią się pytania po starcie.",
+      "q6": "Jak zacząć współpracę?",
+      "a6": "Wystarczy wypełnić formularz kontaktowy lub napisać wiadomość — odezwę się w ciągu 24 godzin, aby ustalić szczegóły."
+    },
+    "cta": {
+      "title": "Gotowa/y na markę, która realnie sprzedaje?",
+      "text": "Napisz do mnie i porozmawiajmy o Twoim projekcie.",
+      "button1": "Rozpocznij projekt",
+      "button2": "Zobacz portfolio"
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "O mnie",
+      "title": "Projektuję marki i strony, w które sama bym uwierzyła.",
+      "text": "MXM Design to studio brandingu i projektowania stron internetowych z Polski. Łączę estetykę z funkcjonalnością, żeby Twoja marka nie tylko dobrze wyglądała, ale też realnie działała."
+    },
+    "story": {
+      "title": "Moja historia",
+      "text": "Wszystko zaczęło się od przekonania, że dobry design to coś więcej niż ładne kolory — to jasna komunikacja, spójna marka i strona, która realnie wspiera sprzedaż. Dziś pomagam markom budować tę spójność od podstaw: od logo, przez identyfikację wizualną, po w pełni działającą stronę internetową."
+    },
+    "values": {
+      "title": "Wartości, którymi się kieruję",
+      "value1Title": "Autentyczność",
+      "value1Text": "Żadnych kopiowanych rozwiązań — każdy projekt odzwierciedla to, kim naprawdę jest Twoja marka.",
+      "value2Title": "Niepowtarzalny design",
+      "value2Text": "Projektuję od zera, dopasowując każdy detal do Twoich celów i odbiorców.",
+      "value3Title": "Jakościowy kod",
+      "value3Text": "Strony budowane starannie, szybkie i responsywne na każdym urządzeniu.",
+      "value4Title": "Strony, które sprzedają",
+      "value4Text": "Design to nie ozdoba — to narzędzie, które ma realnie wspierać Twój biznes.",
+      "value5Title": "Jasna komunikacja",
+      "value5Text": "Zawsze wiesz, na jakim etapie jest projekt i co dzieje się dalej.",
+      "value6Title": "Wsparcie po wdrożeniu",
+      "value6Text": "Nie znikam po oddaniu strony — pomagam z wdrożeniem i jestem dostępna później.",
+      "value7Title": "Darmowe grafiki w cenie",
+      "value7Text": "Każda strona internetowa zawiera pakiet dodatkowych grafik w cenie projektu."
+    },
+    "process": {
+      "title": "Jak wygląda współpraca",
+      "step1Title": "Rozmowa",
+      "step1Text": "Poznajemy Twoje cele, markę i oczekiwania.",
+      "step2Title": "Wycena i projekt",
+      "step2Text": "Przygotowuję wycenę, a następnie projekt graficzny do akceptacji.",
+      "step3Title": "Realizacja",
+      "step3Text": "Koduję i buduję finalną wersję strony.",
+      "step4Title": "Wdrożenie i wsparcie",
+      "step4Text": "Publikuję stronę i zostaję z Tobą na wypadek pytań."
+    },
+    "cta": {
+      "title": "Porozmawiajmy o Twoim projekcie",
+      "button": "Skontaktuj się"
+    }
+  },
+  "services": {
+    "hero": {
+      "eyebrow": "Usługi",
+      "title": "Branding, strony internetowe i reklamy — pod jednym dachem.",
+      "text": "Trzy usługi, jeden spójny cel: marka, która wygląda profesjonalnie i realnie sprzedaje."
+    },
+    "branding": {
+      "eyebrow": "01",
+      "title": "Branding",
+      "text": "Kompletna identyfikacja wizualna, która sprawia, że Twoja marka jest rozpoznawalna i zapada w pamięć.",
+      "item1": "Logo i warianty logotypu",
+      "item2": "Paleta kolorów i typografia",
+      "item3": "Księga znaku (brand book)",
+      "item4": "Szablony na social media",
+      "item5": "Pakiet grafik do materiałów firmowych",
+      "cta": "Zapytaj o branding"
+    },
+    "webdesign": {
+      "eyebrow": "02",
+      "title": "Strony internetowe",
+      "text": "Responsywne strony zaprojektowane z myślą o konwersji, szybkości i wygodzie użytkownika.",
+      "item1": "Projekt UI/UX",
+      "item2": "Responsywny, ręcznie pisany kod",
+      "item3": "Optymalizacja pod SEO",
+      "item4": "Wdrożenie na hosting/domenę",
+      "item5": "Pakiet darmowych grafik",
+      "item6": "Wsparcie po starcie strony",
+      "cta": "Zapytaj o stronę"
+    },
+    "ads": {
+      "eyebrow": "03",
+      "title": "Reklamy",
+      "text": "Kreacje reklamowe, które przyciągają uwagę i są spójne z Twoją marką.",
+      "item1": "Kreacje na Meta Ads",
+      "item2": "Kreacje na Google Ads",
+      "item3": "Banery i grafiki produktowe",
+      "item4": "Formaty dopasowane pod każdą platformę",
+      "cta": "Zapytaj o reklamy"
+    },
+    "cta": {
+      "title": "Nie wiesz, czego potrzebujesz?",
+      "text": "Napisz do mnie — razem ustalimy najlepszy zakres dla Twojego projektu.",
+      "button": "Skontaktuj się"
+    }
+  },
+  "portfolio": {
+    "hero": {
+      "eyebrow": "Portfolio",
+      "title": "Wybrane realizacje",
+      "text": "Poniżej znajdziesz przykładowe projekty. Pełne case studies pojawią się tutaj wkrótce."
+    },
+    "filters": {
+      "all": "Wszystkie",
+      "branding": "Branding",
+      "webdesign": "Strony WWW",
+      "ads": "Reklamy"
+    },
+    "projects": {
+      "project1Name": "Aurora",
+      "project1Desc": "Case study w przygotowaniu.",
+      "project2Name": "Nova",
+      "project2Desc": "Case study w przygotowaniu.",
+      "project3Name": "Lumen",
+      "project3Desc": "Case study w przygotowaniu.",
+      "project4Name": "Vireo",
+      "project4Desc": "Case study w przygotowaniu.",
+      "project5Name": "Solace",
+      "project5Desc": "Case study w przygotowaniu.",
+      "project6Name": "Ember",
+      "project6Desc": "Case study w przygotowaniu."
+    },
+    "cta": {
+      "title": "Twój projekt może być następny",
+      "button": "Rozpocznij projekt"
+    }
+  },
+  "contact": {
+    "hero": {
+      "eyebrow": "Kontakt",
+      "title": "Porozmawiajmy o Twoim projekcie",
+      "text": "Wypełnij formularz poniżej — odpowiadam zwykle w ciągu 24 godzin."
+    },
+    "form": {
+      "nameLabel": "Imię i nazwisko",
+      "emailLabel": "Adres e-mail",
+      "phoneLabel": "Telefon (opcjonalnie)",
+      "projectTypeLabel": "Rodzaj projektu",
+      "projectTypePlaceholder": "Wybierz rodzaj projektu",
+      "projectTypeBranding": "Branding",
+      "projectTypeWeb": "Strona internetowa",
+      "projectTypeAds": "Reklamy",
+      "projectTypeUnsure": "Jeszcze nie wiem",
+      "budgetLabel": "Szacowany budżet (opcjonalnie)",
+      "messageLabel": "Opowiedz mi o swoim projekcie",
+      "submitButton": "Wyślij wiadomość",
+      "requiredError": "To pole jest wymagane",
+      "emailError": "Podaj prawidłowy adres e-mail",
+      "successMessage": "Dziękuję! Twoja wiadomość została wysłana — odezwę się wkrótce.",
+      "submitError": "Coś poszło nie tak. Spróbuj ponownie lub napisz bezpośrednio na e-mail.",
+      "note": "Wysyłając formularz zgadzasz się na kontakt w sprawie Twojego zapytania."
+    },
+    "info": {
+      "title": "Inne sposoby kontaktu",
+      "followLabel": "Obserwuj MXM Design"
+    },
+    "steps": {
+      "step1": "Wysyłasz wiadomość",
+      "step2": "Odpowiadam w ciągu 24h",
+      "step3": "Ustalamy szczegóły i zaczynamy"
+    }
+  }
+}

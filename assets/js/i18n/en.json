@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "cta": "Get a Quote"
+  },
+  "meta": {
+    "titleHome": "MXM Design — Branding & Web Design Studio",
+    "titleAbout": "About — MXM Design",
+    "titleServices": "Services — MXM Design",
+    "titlePortfolio": "Portfolio — MXM Design",
+    "titleContact": "Contact — MXM Design"
+  },
+  "footer": {
+    "tagline": "A branding & web design studio based in Poland.",
+    "pagesTitle": "Pages",
+    "servicesTitle": "Services",
+    "contactTitle": "Contact",
+    "ctaTitle": "Have a project in mind?",
+    "ctaText": "Get in touch — let's talk about the details.",
+    "ctaButton": "Get in Touch",
+    "rights": "All rights reserved.",
+    "madeIn": "Designed in Poland."
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "MXM Design — Branding & Web Studio",
+      "title": "Brands That Stick. Websites That Sell.",
+      "subtitle": "I design logos, brand identities and websites for businesses that want to look and perform exceptional — without compromising on code quality or communication.",
+      "ctaPrimary": "Get a Quote",
+      "ctaSecondary": "See Portfolio"
+    },
+    "problem": {
+      "eyebrow": "The Problem",
+      "title": "Most websites look the same — and sell nothing.",
+      "text": "Off-the-shelf templates, random branding, and websites built “quickly” cost you more than you think: client trust, brand recognition, and sales. MXM Design changes that — from the first sketch to launch.",
+      "feature1Title": "Authentic Design",
+      "feature1Text": "No templates. Every project is built from scratch, tailored to your brand and audience.",
+      "feature2Title": "Websites That Sell",
+      "feature2Text": "Design isn't just aesthetics — it's conversion. Every page is built with your business goals in mind.",
+      "feature3Title": "Clean, Quality Code",
+      "feature3Text": "Fast, responsive, solidly-built websites that just work — no surprises."
+    },
+    "why": {
+      "eyebrow": "Why MXM Design",
+      "title": "A Partnership Built on Clear Rules",
+      "text": "Handing your project to someone else takes trust. That's why I keep communication clear at every step — and I don't disappear after launch.",
+      "check1": "Clear communication at every stage of the project",
+      "check2": "Support and rollout help after the site goes live",
+      "check3": "A free graphics package included with every website",
+      "check4": "Unique design tailored to your brand",
+      "check5": "Code written with quality and speed in mind",
+      "ctaButton": "See My Process"
+    },
+    "stats": {
+      "stat1Number": "30+",
+      "stat1Label": "projects delivered",
+      "stat2Number": "5+",
+      "stat2Label": "years of experience",
+      "stat3Number": "24h",
+      "stat3Label": "average response time"
+    },
+    "testimonial": {
+      "quote": "The website MXM Design built completely changed how clients perceive our brand. The process was clear, fast, and free of surprises — exactly what we needed.",
+      "author": "MXM Design Client",
+      "role": "Case study coming soon"
+    },
+    "tools": {
+      "eyebrow": "Tools",
+      "title": "Tools & Platforms I Work With"
+    },
+    "packages": {
+      "eyebrow": "Packages",
+      "title": "Choose the Package That Fits Your Project",
+      "subtitle": "Every project is different — final pricing is always tailored individually.",
+      "brandingName": "Branding",
+      "brandingDesc": "A complete visual identity for your brand.",
+      "brandingItem1": "Logo and logo variations",
+      "brandingItem2": "Color palette & typography",
+      "brandingItem3": "Brand guidelines (brand book)",
+      "brandingItem4": "Social media graphics package",
+      "webName": "Website",
+      "webDesc": "A responsive website designed to convert.",
+      "webItem1": "UI/UX design tailored to your brand",
+      "webItem2": "High-quality responsive code",
+      "webItem3": "SEO and speed optimization",
+      "webItem4": "Launch plus free graphics package",
+      "webItem5": "Post-launch support",
+      "adsName": "Ads",
+      "adsDesc": "Ad creatives and graphics that capture attention.",
+      "adsItem1": "Meta Ads and Google Ads creatives",
+      "adsItem2": "Banners & product graphics",
+      "adsItem3": "Aligned with your brand identity",
+      "adsItem4": "Ready-made formats for every platform",
+      "price": "Custom Quote",
+      "ctaButton": "Ask for a Quote"
+    },
+    "work": {
+      "eyebrow": "Portfolio",
+      "title": "Recent Work",
+      "viewAll": "View Full Portfolio",
+      "project1Name": "Project Aurora",
+      "project1Tag": "Branding",
+      "project2Name": "Project Nova",
+      "project2Tag": "Website",
+      "project3Name": "Project Lumen",
+      "project3Tag": "Ads"
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Frequently Asked Questions",
+      "q1": "What does the process look like?",
+      "a1": "We start with a short conversation about your goals and brand, then I prepare a quote and timeline. Once approved, we move to design, feedback rounds, and launch.",
+      "q2": "How long does a website take to build?",
+      "a2": "Depending on scope, a standard website typically takes 2–4 weeks from design approval.",
+      "q3": "How many revisions are included?",
+      "a3": "Every project includes a set number of revision rounds during the design phase, so you're confident the final result meets your expectations.",
+      "q4": "What exactly do I get with my website?",
+      "a4": "Alongside a responsive, fully functional website, you get a free graphics package for social media plus hands-on support during launch.",
+      "q5": "Do you help after the project is finished?",
+      "a5": "Yes — I stay with you through launch (domain/hosting setup) and remain available if questions come up afterward.",
+      "q6": "How do I get started?",
+      "a6": "Just fill out the contact form or send a message — I'll get back to you within 24 hours to discuss the details."
+    },
+    "cta": {
+      "title": "Ready for a brand that actually sells?",
+      "text": "Get in touch and let's talk about your project.",
+      "button1": "Start a Project",
+      "button2": "See Portfolio"
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "About",
+      "title": "I design brands and websites I'd believe in myself.",
+      "text": "MXM Design is a branding and web design studio based in Poland. I combine aesthetics with function so your brand doesn't just look good — it actually works."
+    },
+    "story": {
+      "title": "My Story",
+      "text": "It all started with a belief that good design is more than nice colors — it's clear communication, a consistent brand, and a website that actually supports sales. Today I help brands build that consistency from the ground up: from the logo, through visual identity, to a fully working website."
+    },
+    "values": {
+      "title": "The Values I Work By",
+      "value1Title": "Authenticity",
+      "value1Text": "No copy-paste solutions — every project reflects who your brand really is.",
+      "value2Title": "One-of-a-Kind Design",
+      "value2Text": "Designed from scratch, with every detail tailored to your goals and audience.",
+      "value3Title": "Quality Code",
+      "value3Text": "Carefully built websites — fast and responsive on every device.",
+      "value4Title": "Websites That Sell",
+      "value4Text": "Design isn't decoration — it's a tool that actively supports your business.",
+      "value5Title": "Clear Communication",
+      "value5Text": "You always know exactly where your project stands and what happens next.",
+      "value6Title": "Support After Launch",
+      "value6Text": "I don't disappear after delivery — I help with launch and stay available after.",
+      "value7Title": "Free Graphics Included",
+      "value7Text": "Every website comes with a free graphics package included in the price."
+    },
+    "process": {
+      "title": "How We'll Work Together",
+      "step1Title": "Discovery Call",
+      "step1Text": "We discuss your goals, brand, and expectations.",
+      "step2Title": "Quote & Design",
+      "step2Text": "I prepare a quote, then the design concept for your approval.",
+      "step3Title": "Development",
+      "step3Text": "I code and build the final version of the site.",
+      "step4Title": "Launch & Support",
+      "step4Text": "I launch the site and stay available if questions come up."
+    },
+    "cta": {
+      "title": "Let's talk about your project",
+      "button": "Get in Touch"
+    }
+  },
+  "services": {
+    "hero": {
+      "eyebrow": "Services",
+      "title": "Branding, websites, and ads — all under one roof.",
+      "text": "Three services, one consistent goal: a brand that looks professional and actually sells."
+    },
+    "branding": {
+      "eyebrow": "01",
+      "title": "Branding",
+      "text": "A complete visual identity that makes your brand recognizable and memorable.",
+      "item1": "Logo and logo variations",
+      "item2": "Color palette & typography",
+      "item3": "Brand guidelines (brand book)",
+      "item4": "Social media templates",
+      "item5": "Graphics package for business materials",
+      "cta": "Ask About Branding"
+    },
+    "webdesign": {
+      "eyebrow": "02",
+      "title": "Web Design",
+      "text": "Responsive websites designed with conversion, speed, and usability in mind.",
+      "item1": "UI/UX design",
+      "item2": "Responsive, hand-written code",
+      "item3": "SEO optimization",
+      "item4": "Launch on hosting/domain",
+      "item5": "Free graphics package",
+      "item6": "Post-launch support",
+      "cta": "Ask About Your Website"
+    },
+    "ads": {
+      "eyebrow": "03",
+      "title": "Ads",
+      "text": "Ad creatives that capture attention and stay true to your brand.",
+      "item1": "Meta Ads creatives",
+      "item2": "Google Ads creatives",
+      "item3": "Banners & product graphics",
+      "item4": "Formats tailored to every platform",
+      "cta": "Ask About Ads"
+    },
+    "cta": {
+      "title": "Not sure what you need?",
+      "text": "Get in touch — we'll figure out the best scope for your project together.",
+      "button": "Get in Touch"
+    }
+  },
+  "portfolio": {
+    "hero": {
+      "eyebrow": "Portfolio",
+      "title": "Selected Work",
+      "text": "Below you'll find sample projects. Full case studies are coming soon."
+    },
+    "filters": {
+      "all": "All",
+      "branding": "Branding",
+      "webdesign": "Websites",
+      "ads": "Ads"
+    },
+    "projects": {
+      "project1Name": "Aurora",
+      "project1Desc": "Case study coming soon.",
+      "project2Name": "Nova",
+      "project2Desc": "Case study coming soon.",
+      "project3Name": "Lumen",
+      "project3Desc": "Case study coming soon.",
+      "project4Name": "Vireo",
+      "project4Desc": "Case study coming soon.",
+      "project5Name": "Solace",
+      "project5Desc": "Case study coming soon.",
+      "project6Name": "Ember",
+      "project6Desc": "Case study coming soon."
+    },
+    "cta": {
+      "title": "Your project could be next",
+      "button": "Start a Project"
+    }
+  },
+  "contact": {
+    "hero": {
+      "eyebrow": "Contact",
+      "title": "Let's talk about your project",
+      "text": "Fill out the form below — I usually reply within 24 hours."
+    },
+    "form": {
+      "nameLabel": "Full Name",
+      "emailLabel": "Email Address",
+      "phoneLabel": "Phone (optional)",
+      "projectTypeLabel": "Project Type",
+      "projectTypePlaceholder": "Select project type",
+      "projectTypeBranding": "Branding",
+      "projectTypeWeb": "Website",
+      "projectTypeAds": "Ads",
+      "projectTypeUnsure": "Not sure yet",
+      "budgetLabel": "Estimated Budget (optional)",
+      "messageLabel": "Tell me about your project",
+      "submitButton": "Send Message",
+      "requiredError": "This field is required",
+      "emailError": "Enter a valid email address",
+      "successMessage": "Thank you! Your message has been sent — I'll get back to you soon.",
+      "submitError": "Something went wrong. Please try again or email me directly.",
+      "note": "By submitting this form, you agree to be contacted regarding your inquiry."
+    },
+    "info": {
+      "title": "Other Ways to Reach Me",
+      "followLabel": "Follow MXM Design"
+    },
+    "steps": {
+      "step1": "You send a message",
+      "step2": "I reply within 24h",
+      "step3": "We set the details and get started"
+    }
+  }
+}

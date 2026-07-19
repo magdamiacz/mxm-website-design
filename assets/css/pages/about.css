@@ -1,0 +1,35 @@
+.about-hero {
+  padding-top: 72px;
+}
+
+.about-hero .hero-visual {
+  aspect-ratio: 3 / 4;
+  background: linear-gradient(160deg, var(--color-accent-900), var(--color-black) 70%);
+}
+
+.process-step {
+  color: var(--color-white);
+}
+
+.process-step__number {
+  font-family: var(--fonts-badge);
+  color: var(--color-accent-100);
+  font-size: 0.875rem;
+  margin-bottom: 12px;
+}
+
+.process-step h3 {
+  color: var(--color-white);
+  margin-bottom: 8px;
+}
+
+.process-step p {
+  color: var(--color-neutral-800);
+  font-size: 0.9375rem;
+}
+
+@media (max-width: 640px) {
+  .about-hero {
+    padding-top: 40px;
+  }
+}
