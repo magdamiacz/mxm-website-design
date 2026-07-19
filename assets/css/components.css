@@ -1045,7 +1045,7 @@ textarea.form-control {
   height: 6px;
   margin: -3px 0 0 -3px;
   border-radius: 50%;
-  background: var(--color-black);
+  background: #fff;
   mix-blend-mode: difference;
 }
 
@@ -1054,21 +1054,16 @@ textarea.form-control {
   height: 36px;
   margin: -18px 0 0 -18px;
   border-radius: 50%;
-  border: 1px solid rgba(10, 10, 10, 0.45);
-  transition: width 0.25s var(--ease-out-expo), height 0.25s var(--ease-out-expo), margin 0.25s var(--ease-out-expo), border-color 0.25s ease, background-color 0.25s ease;
+  border: 1.5px solid #fff;
+  mix-blend-mode: difference;
+  transition: width 0.25s var(--ease-out-expo), height 0.25s var(--ease-out-expo), margin 0.25s var(--ease-out-expo), background-color 0.25s ease;
 }
 
 .cursor-hover .mxm-cursor__ring {
   width: 52px;
   height: 52px;
   margin: -26px 0 0 -26px;
-  border-color: var(--color-accent);
-  background: rgba(55, 48, 163, 0.08);
-}
-
-.cursor-hover .mxm-cursor__dot {
-  background: var(--color-accent);
-  mix-blend-mode: normal;
+  background: rgba(255, 255, 255, 0.12);
 }
 
 @media (pointer: coarse) {
