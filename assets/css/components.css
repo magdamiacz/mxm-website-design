@@ -84,7 +84,14 @@
   z-index: 100;
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--color-border);
+}
+
+.site-header:has(.mobile-nav.is-open) {
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 .site-header__inner {
@@ -173,22 +180,29 @@
 }
 
 .mobile-nav {
-  position: fixed;
-  inset: 0;
-  top: 68px;
-  background: var(--color-white);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  min-height: calc(100dvh - 100%);
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   z-index: 90;
   padding: 32px 24px;
+  overflow-y: auto;
   transform: translateY(-8px);
   opacity: 0;
   pointer-events: none;
-  transition: transform var(--duration-normal) var(--ease-out-expo), opacity var(--duration-normal) var(--ease-out-expo);
+  visibility: hidden;
+  transition: transform var(--duration-normal) var(--ease-out-expo), opacity var(--duration-normal) var(--ease-out-expo), visibility var(--duration-normal) var(--ease-out-expo);
 }
 
 .mobile-nav.is-open {
   transform: translateY(0);
   opacity: 1;
   pointer-events: auto;
+  visibility: visible;
 }
 
 .mobile-nav a {
